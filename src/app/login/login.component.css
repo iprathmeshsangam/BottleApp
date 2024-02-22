@@ -1,0 +1,82 @@
+body{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+}
+header h1{
+    font-size: 4rem;
+    font-weight: normals;
+}
+header p {
+    font-size: small;
+}
+.loginSection{
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* border: 2px solid black; */
+    width: 400px;
+    margin: auto;
+    height: auto;
+}
+
+.loginElem{
+    display: flex;
+    flex-direction: column;
+}
+.loginElem div{
+    margin-top: 10px;
+}
+.loginInput{
+    padding: 10px;
+    width: 100%;
+    width: 300px;
+    margin-top: 5px;
+}
+#submit{
+    margin: auto;
+    width: 100%;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.create a{
+    color: grey;
+    font-size: small;
+    text-decoration: underline;
+}
+#email{
+    outline: none;
+}
+#email:focus{
+    outline: 3px rgb(42, 145, 255) solid;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.socailInput{
+    padding: 10px;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}

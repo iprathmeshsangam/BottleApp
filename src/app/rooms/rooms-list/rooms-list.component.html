@@ -1,0 +1,16 @@
+
+    <table class="table">
+        <tr>
+            <th>Room No</th>
+            <th>Room Type</th>
+            <th>Room charges</th>
+            <th>Check In</th>
+        </tr>
+        <tr *ngFor="let item of roomList">
+            <td>{{item.roomNumber}}</td>
+            <td>{{item.roomType | titlecase}}</td>
+            <td>{{item.roomPrice | currency : 'INR'}}</td>
+            <td>{{item.checkIn | date : 'short'}}</td>
+        </tr>
+    </table>
+

@@ -1,0 +1,13 @@
+<h2>Bottle Rooms Booking</h2>
+<div class="containerRooms">
+    <div class="status">
+        <p *ngIf="spaces.availableRooms < 10" class="roomsStatus" id="available"> Available Rooms :
+            {{spaces.availableRooms}}</p>
+    
+        <p class="roomsStatus" id="booked">Booked Rooms : {{spaces.BookedRooms}}</p>
+    
+        <p class="roomsStatus" id="totalrooms"> Total Rooms : {{spaces.TotalRooms}}</p>
+    
+    </div>
+    <app-rooms-list [roomList]="roomList"></app-rooms-list>
+</div>
